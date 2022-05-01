@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Schmidt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="socials">
+            <a href="https://github.com/schmay33" class="social-link">
+                <img src="svg/github.svg" alt="Github" title="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="social-link">
+                <img src="svg/linkedin.svg" alt="Linkedin" title="Linkedin">
+            </a>
+        </div>
+        <button class="hamburger hamburger--squeeze" type="button" id="hamburger" aria-label="Menu"
+            aria-controls="navigation" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <ul class="header-menu">
+            <li><a href="#footer">Contact Me</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <section>
+            <div class="container">
+                <h1 class="hero-title">Hello! I'm Nathan.<br> I am a fullstack developer.</h1>
+                <h3 class="hero-subtitle">Highly Motivated and passionate</h3>
+                <p class="hero-text">My motivation and love for development as well as good design have brought me
+                    to
+                    where I am today.<br> Every day I try to keep up with the latest technology trends.</p>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 id="projects">Projects</h2>
+                <p>Take a look at some of the projects that I've been working on.</p>
+                <div class="options">
+                    <div class="option active" style="background-image:url(images/photogallery.png);">
+                        <div class="info">
+                            <p class="main-info">
+                                <a
+                                    href="https://schmay33.github.io/Grid-Layout-Responsive-Photo-Gallery-TD5/">
+                                    Responsive Photo Gallery
+                                </a>
+                            </p>
+                            <p class="sub-info">A searchable photo gallery built for different device sizes.</p>
+                        </div>
+                    </div>
+                    <div class="option" style="background-image:url(images/techdegree10.png);">
+                        <div class="info">
+                            <p class="main-info">
+                                <a
+                                    href="https://github.com/schmay33/techdegree-project-10">
+                                    Course Library
+                                </a>
+                            </p>
+                            <p class="sub-info">Course Library frontend connected to an API backend.</p>
+                        </div>
+                    </div>
+                    <div class="option" style="background-image: url(images/webappdashboard.png);">
+                        <div class="info">
+                            <p class="main-info">
+                                <a
+                                    href="https://schmay33.github.io/WebApp-Dashboard-TD7/">
+                                    Web App Dashboard
+                                </a>
+                            </p>
+                            <p class="sub-info">A dashboard with widgets built with css grid layout.</p>
+                        </div>
+                    </div>
+                    <div class="option" style="background-image: url(images/wheelofsuccess.png);">
+                        <div class="info">
+                            <p class="main-info">
+                                <a
+                                    href="https://schmay33.github.io/Wheel-Of-Success-Game-TD6/">
+                                    Wheel of Success Game
+                                </a>
+                            </p>
+                            <p class="sub-info">A simple phrase guessing game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <form action="#" class="contact-form container" autocomplete="off">
+            <h3>Let's get in touch!</h3>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button type="submit" class="button">Send</button>
+        </form>
+    </footer>
+    <div class="overlay" id="overlay">
+        <ul class="overlay-menu">
+            <li>About</li>
+        </ul>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
