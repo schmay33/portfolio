@@ -137,6 +137,10 @@ h2 {
     width: 90%;
 }
 
+.hero-img {
+    display: none;
+}
+
 .hero-title {
     font-size: 3rem;
 }
@@ -196,11 +200,6 @@ section:nth-child(even) {
     background: var(--color-background-accent);
 }
 
-@media screen and (min-width: 600px) {
-
-    
-}
-
 @media screen and (min-width: 768px) {
     .hamburger {
         display: none;
@@ -224,8 +223,23 @@ section:nth-child(even) {
         text-transform: uppercase;
         font-size: .7rem;
     }
+
+    .hero-img {
+        float: right;
+        display: inline;
+    }
+
+    .hero-img img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        transition: height 1s ease-in, width 1s ease-in;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-
+    .hero-img img {
+        height: 300px;
+        width: 300px;
+    }
 }
