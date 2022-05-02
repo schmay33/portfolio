@@ -134,7 +134,7 @@ h2 {
 .container {
     max-width: 1200px;
     margin: 15px auto;
-    padding: 0 15px;
+    padding: 0;
     width: 90%;
 }
 
@@ -154,87 +154,6 @@ h2 {
     display: grid;
     row-gap: 10px;
     max-width: 500px;
-}
-
-.gallery {
-    /**
-     * User input values.
-     */
-    --grid-layout-gap: 10px;
-    --grid-column-count: 2;
-    --grid-item--min-width: 250px;
-
-    /**
-     * Calculated values.
-     */
-    --gap-count: calc(var(--grid-column-count) - 1);
-    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
-    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
-    grid-gap: var(--grid-layout-gap);
-}
-
-
-/*  ------------------------------------ */
-
-
-
-
-
-
-
-/*  ------------------------------------ */
-
-
-
-
-
-
-
-.gallery-img {
-    border: 5px solid var(--color-text);
-}
-
-.gallery-img,
-.gallery-img img {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-}
-
-.gallery-img img {
-    margin-top: -30px;
-    z-index: -1;
-}
-
-.gallery-img figcaption {
-    color: var(--color-text-accent);
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: .9rem;
-    cursor: pointer;
-    text-decoration: underline;
-    z-index: 500;
-}
-
-.gallery-img-overlay {
-    position: relative;
-    background: rgba(255, 255, 255, 1);
-    opacity: .5;
-    height: 100%;
-    width: 100%;
-    max-width: 200px;
-    margin: 0;
-    padding: 0;
-}
-
-.gallery-img-overlay p {
-    padding: 0;
-    margin: 0;
 }
 
 input,
@@ -271,21 +190,7 @@ section:nth-child(even) {
 
 @media screen and (min-width: 600px) {
 
-    .gallery-img,
-    .gallery-img img {
-        height: 100%;
-    }
-
-    .gallery-img figcaption {
-        position: relative;
-        top: 0;
-        background: var(--color-text);
-        padding: 10px 20px;
-        z-index: 500;
-        color: var(--color-background);
-        text-decoration: none;
-        text-align: center;
-    }
+    
 }
 
 @media screen and (min-width: 768px) {

@@ -8,13 +8,15 @@
 .option {
     flex-basis: 170px;
     border-radius: 15px;
-    margin: 10px;
+    margin: 10px 0;
     transition: .8s ease-in-out;
     background-size: cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border: 1px solid var(--color-text);
+    box-shadow: inset 0px 0px 2px 1px var(--color-text);
 }
 
 .option .info {
@@ -35,6 +37,7 @@
     margin: 0;
     text-decoration: underline;
     cursor: pointer;
+    transition: 1s ease-in-out;
 }
 
 .sub-info {
@@ -58,6 +61,7 @@
         border-radius: 30px;
         height: 50vh;
         cursor: pointer;
+        margin: 10px;
     }
 
     .option.active {
@@ -67,13 +71,29 @@
     }
 
     .option.active .info {
-        height: 25%;
-        transition: 2s ease-in-out;
+        height: fit-content;
+        padding-top: 10px;
         opacity: 1;
+        transition: all 1s ease-in-out;
+
+    }
+
+    .option.active .info .main-info a {
+        display: inline;
+        color: var(--color-background);
     }
 
     .option:not(.active) {
         flex-grow: 1;
+    }
+
+    .option:not(.active) .info {
+        visibility: hidden;
+        transition: visibility 1s ease-in;
+    }
+
+    .option:not(.active) .info .main-info a {
+        display: none;
     }
 
     .main-info {
@@ -89,12 +109,3 @@
         opacity: 0;
     }
 }
-
-@keyframes visible {
-    99% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
-  }
