@@ -203,10 +203,17 @@ header h1 {
 /*-------------------------------------------------------*/
 /*                      Sections                         */
 /*-------------------------------------------------------*/
-
+.projects {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 9rem;
+}
 .project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .project-content-left img {
@@ -214,6 +221,34 @@ header h1 {
     width: auto;
     aspect-ratio: 3/1;
     object-fit: cover;
+}
+
+.project-content-right {
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+    align-self: start;
+    justify-self: start;
+}
+
+.project-skills-list {
+    padding: .4rem 0 0 0;
+    text-align: left;
+    width: 100%;
+}
+
+.project-skills-list-item {
+    display: inline;
+    border-top: 1px solid var(--text-color-tertiary);
+    border-bottom: 1px solid black;
+    margin-right: 1rem;
 }
 
 

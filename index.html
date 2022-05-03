@@ -17,17 +17,22 @@
 
 <body>
     <div class="preloader" id="preloader">
-        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0">
+        <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0">
             <circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2">
-              <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/>
+                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3"
+                    keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite" />
+                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3"
+                    keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite" />
             </circle>
             <circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2">
-              <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/>
-              <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/>
+                <animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3"
+                    keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite" />
+                <animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3"
+                    keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite" />
             </circle>
-          </svg>
-          <p>Loading</p>
+        </svg>
+        <p>Loading</p>
     </div>
     <header class="container slideDown">
         <h1>Nathan Schmidt</h1>
@@ -53,19 +58,20 @@
                     Worldwide
                 </div>
                 <h1 class="homepage-title">Hello,<br>I'm Nathan Schmidt</h1>
-                <p class="homepage-desc">I'm a <span class="callout">fullstack developer</span> from Kansas City, KS USA.<br> I have an unwavering
+                <p class="homepage-desc">I'm a <span class="callout">fullstack developer</span> from Kansas City, KS
+                    USA.<br> I have an unwavering
                     passion and energy for
                     development and client success.<br><br>
                 </p>
                 <div class="f-row links">
-                    <a href="mailto:hello@nschmidt.me" class="arrow-link"> Say hello <img class="arrow-right" src="images/arrow-up-right.svg"
-                            alt="Arrow icon" loading="lazy"></a>
+                    <a href="mailto:hello@nschmidt.me" class="arrow-link"> Say hello <img class="arrow-right"
+                            src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
 
-                    <a href="https://github.com/schmay33" class="arrow-link"> Github <img class="arrow-right" src="images/arrow-up-right.svg"
-                            alt="Arrow icon" loading="lazy"></a>
+                    <a href="https://github.com/schmay33" class="arrow-link"> Github <img class="arrow-right"
+                            src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
 
-                    <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="arrow-link"> LinkedIn <img class="arrow-right" src="images/arrow-up-right.svg"
-                            alt="Arrow icon" loading="lazy"></a>
+                    <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="arrow-link"> LinkedIn <img
+                            class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
             <div class="homepage-right fadeIn">
@@ -78,14 +84,49 @@
                     <img src="images/bookcollection.png" alt="Book Collection Site Image">
                 </div>
                 <div class="project-content-right">
-                    <h2>Title</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis a eaque quis, natus nostrum
-                        esse voluptates vero dicta, est iusto eligendi hic excepturi saepe reiciendis obcaecati non
-                        numquam harum impedit.</p>
-                    <ul>
-                        <li>skill 1</li>
-                        <li>skill 2</li>
-                        <li>skill 3</li>
+                    <h2 class="project-title">Book Collection</h2>
+                    <p class="project-desc">This is a Node.JS app used to manage a collection of books.</p>
+                    <a href="https://github.com/schmay33/techdegree-project-08" class="arrow-link project-link"> Github
+                        <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+                    <ul class="project-skills-list">
+                        <li class="project-skills-list-item">Node</li>
+                        <li class="project-skills-list-item">Express</li>
+                        <li class="project-skills-list-item">PUG</li>
+                        <li class="project-skills-list-item">Sequelize</li>
+                        <li class="project-skills-list-item">Pagination</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-content">
+                <div class="project-content-left">
+                    <img src="images/courseapi.png" alt="Course API Site Image">
+                </div>
+                <div class="project-content-right">
+                    <h2 class="project-title">Student / Course API</h2>
+                    <p class="project-desc">This API will provides a way to administer a school database containing information about
+                        students and courses.</p>
+                    <a href="https://github.com/schmay33/techdegree-project-08" class="arrow-link project-link"> Github
+                        <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+                    <ul class="project-skills-list">
+                        <li class="project-skills-list-item">Node</li>
+                        <li class="project-skills-list-item">Express</li>
+                        <li class="project-skills-list-item">Sequelize</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-content">
+                <div class="project-content-left">
+                    <img src="images/techdegree07.png" alt="Course API Site Image">
+                </div>
+                <div class="project-content-right">
+                    <h2 class="project-title">React Flickr Gallery</h2>
+                    <p class="project-desc">This photo gallery was built with Create React App and uses the Flickr API to retrieve images.</p>
+                    <a href="https://github.com/schmay33/techdegree-project-07" class="arrow-link project-link"> Github
+                        <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+                    <ul class="project-skills-list">
+                        <li class="project-skills-list-item">React</li>
+                        <li class="project-skills-list-item">Create React App</li>
+                        <li class="project-skills-list-item">REST API</li>
                     </ul>
                 </div>
             </div>
