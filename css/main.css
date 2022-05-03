@@ -1,6 +1,6 @@
 :root {
-    --background-color-primary: rgb(255,255,255);
-    --background-color-secondary: rgb(36,36,36);
+    --background-color-primary: rgba(255,255,255, .9);
+    --background-color-secondary: rgba(36,36,36, .9);
     --text-color-primary: rgb(36,36,36);
     --text-color-secondary: rgb(255,255,255);
     --text-color-tertiary: #019872;
@@ -21,6 +21,7 @@ html {
     font-family: var(--font);
     color: var(--text-color-primary);
     background-color: var(--background-color-primary);
+    backdrop-filter: blur(5px);
 }
 
 a {
@@ -174,6 +175,9 @@ ul {
 }
 
 .projects-title {
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 3rem;
     padding-top: 2rem;
 }
 
@@ -209,6 +213,7 @@ ul {
     color: var(--text-color-primary);
     margin: 10px;
     font-size: .7rem;
+    backdrop-filter: blur(5px);
 }
 
 .about {
@@ -237,11 +242,15 @@ ul {
 }
 
 .profile-desc {
-    padding: 0 10px;
+    padding: 10px var(--gutter);
 }
 
-.profile-desc h2 {
-    text-align: center;
+.profile-title {
+    font-size: 3rem;
+    text-transform: lowercase;
+    font-weight: 300;
+    line-height: 0;
+
 }
 
 .profile-skills-list {
