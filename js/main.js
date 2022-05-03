@@ -1,15 +1,11 @@
-const arrow = document.getElementById('down-arrow');
-document.addEventListener('scroll', () => {
-    let dataScroll = window.scrollY;
-    if (dataScroll > 100) {
-        arrow.classList.add('full');
-    } else if (dataScroll < 60 && dataScroll > 10) {
-        arrow.classList.remove('full');
-        arrow.classList.add('half');
-    } else if (dataScroll < 10) {
-        arrow.classList.remove('full');
-        arrow.classList.remove('half');
-    }
+const arrowLinks = document.getElementsByClassName("arrow-link");
 
-    document.documentElement.dataset.scroll = dataScroll;
-});
+//loop through all the arrow links and apply on hover event
+for (let i = 0; i < arrowLinks.length; i++) {
+  arrowLinks[i].addEventListener("mouseover", function() {
+    //this.style.color = "#ffc107";
+  });
+  arrowLinks[i].addEventListener("mouseout", function() {
+    //this.style.color = "inherit";
+  });
+}
