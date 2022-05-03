@@ -94,6 +94,10 @@ ul {
     color: var(--text-color-tertiary);
 }
 
+.m-r-auto {
+    margin-right: auto;
+}
+
 
 /*-------------------------------------------------------*/
 /*                        Nav                            */
@@ -209,6 +213,7 @@ header h1 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 9rem;
+    margin-bottom: 4rem;
 }
 .project-content {
     display: grid;
@@ -260,6 +265,12 @@ header h1 {
 /*-------------------------------------------------------*/
 /*                     Footer                            */
 /*-------------------------------------------------------*/
+
+footer h1 {
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: 400; 
+}
 
 .social {
     text-align: center;
