@@ -58,7 +58,7 @@ ul {
 .container {
     z-index: 1;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 var(--gutter);
