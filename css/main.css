@@ -411,7 +411,7 @@ footer h1 {
         transition: all .5s cubic-bezier(0, 0.09, 0.32, 1.39);
     }
 
-    .links a {
+    .homepage-links a {
         margin-right: 2rem;
     }
 
