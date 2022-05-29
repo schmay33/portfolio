@@ -80,6 +80,37 @@ ul {
     margin-right: 10px;
 }
 
+.preloader {
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.preloader-fadeOut {
+    visibility: hidden;
+    display: none;
+}
+
+.loader-icon {
+    border: 16px solid var(--text-color-primary); /* Light grey */
+    border-top: 16px solid var(--text-color-tertiary); /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 
 
 /*-------------------------------------------------------*/
@@ -92,6 +123,7 @@ header {
     align-items: center;
     margin-bottom: 3rem;
     font-size: 1rem;
+    z-index: 2;
 }
 
 header h1 {
@@ -127,7 +159,8 @@ header a {
 }
 
 .slideDown {
-    animation: slideDown 2s ease-out 0s 1 normal forwards;
+    transform: translateY(-100%);
+    animation: slideDown 1.5s ease-out 2s 1 normal forwards;
 }
 
 .homepage-title {

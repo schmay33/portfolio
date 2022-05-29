@@ -16,7 +16,10 @@
 </head>
 
 <body>
-    <header class="container slideDown">
+    <div class="preloader">
+        <div class="loader-icon"></div>
+    </div>
+    <header class="container slideDown" id="mainHeader">
         <h1 id="top">Nathan Schmidt</h1>
         <a href="#projects" class="arrow-link">Projects<img class="arrow-right"
             src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
@@ -24,10 +27,9 @@
                 src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
     </header>
     <main class="container">
-        <div class="homepage">
+        <div class="homepage" id="homepage">
             <div class="homepage-left">
-
-                <h1 class="homepage-title">Hello,<br>I'm Nathan Schmidt</h1>
+                <h1 class="homepage-title" id="homepage-title">Hello,<br>I'm Nathan Schmidt</h1>
                 <p class="homepage-desc">I'm a <span class="callout">fullstack developer</span> from Kansas City, KS
                     USA.<br>
                     Every day I try to keep up with the latest technology trends.<br>
