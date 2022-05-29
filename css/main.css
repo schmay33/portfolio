@@ -76,6 +76,11 @@ ul {
     display: none;
 }
 
+.social-icon {
+    margin-right: 10px;
+}
+
+
 
 /*-------------------------------------------------------*/
 /*                        Nav                            */
@@ -98,6 +103,7 @@ header h1 {
 
 header a {
     display: none;
+    margin-left: 15px;
 }
 
 /*-------------------------------------------------------*/
@@ -369,7 +375,6 @@ footer h1 {
     .project-content-left img {
         height: 10rem;
         width: 95%;
-        max-width: auto;
         aspect-ratio: 3/1;
         object-fit: cover;
         object-position: left top;
