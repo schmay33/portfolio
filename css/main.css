@@ -67,7 +67,6 @@ ul {
     color: var(--text-color-tertiary);
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--text-color-secondary);
     background-color: var(--text-color-tertiary);
     width: fit-content;
 }
@@ -443,7 +442,7 @@ footer h1 {
         width: 20px;
     }
 
-    .arrow-link:hover>img {
+    .arrow-link:hover > img:not(.social-icon) {
         transform: translateX(3px) translateY(-4px);
         transition: all .5s cubic-bezier(0, 0.09, 0.32, 1.39);
     }
