@@ -178,6 +178,18 @@ header a {
     margin-bottom: 3rem;
 }
 
+@keyframes scale-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
