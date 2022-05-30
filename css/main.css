@@ -64,7 +64,7 @@ ul {
 }
 
 .arrow-link {
-    color: var(--text-color-tertiary);
+    color: var(--text-color-secondary);
     text-decoration: none;
     padding: 5px 10px;
     background-color: var(--text-color-tertiary);
