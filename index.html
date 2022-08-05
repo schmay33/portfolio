@@ -13,6 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- AOS Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script defer >
+        AOS.init();
+    </script>
 </head>
 
 <body>
@@ -21,8 +27,8 @@
     </div>
     <header class="container slideDown" id="mainHeader">
         <h1 id="top">Nathan Schmidt</h1>
-        <a href="#projects" class="arrow-link">Projects<img class="arrow-right"
-            src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+        <a href="#projects" class="arrow-link">Projects<img class="arrow-right" src="images/arrow-up-right.svg"
+                alt="Arrow icon" loading="lazy"></a>
         <a href="mailto:hello@nschmidt.me" class="arrow-link">hello@nschmidt.me<img class="arrow-right"
                 src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
     </header>
@@ -41,14 +47,14 @@
                             src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
 
                     <a href="https://github.com/schmay33" class="arrow-link">
-                        <img class="social-icon" src="svg/github.svg" alt="Github Icon" loading="lazy" >
-                        Github <img class="arrow-right"
-                            src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+                        <img class="social-icon" src="svg/github.svg" alt="Github Icon" loading="lazy">
+                        Github <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon"
+                            loading="lazy"></a>
 
-                    <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="arrow-link"> 
-                        <img class="social-icon" src="svg/linkedin.svg" alt="LinkedIn Icon" loading="lazy" >
-                        LinkedIn <img
-                            class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+                    <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="arrow-link">
+                        <img class="social-icon" src="svg/linkedin.svg" alt="LinkedIn Icon" loading="lazy">
+                        LinkedIn <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon"
+                            loading="lazy"></a>
                 </div>
             </div>
             <div class="homepage-right">
@@ -56,7 +62,7 @@
             </div>
         </div>
         <section class="projects" id="projects">
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/techdegree10.png" alt="Course Library Site Image">
                 </div>
@@ -75,7 +81,7 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/bookcollection.png" alt="Book Collection Site Image">
                 </div>
@@ -93,7 +99,7 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/courseapi.png" alt="Course API Site Image">
                 </div>
@@ -112,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/techdegree07.png" alt="Course API Site Image">
                 </div>
@@ -129,7 +135,7 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/webappdashboard.png" alt="Web App Site Image">
                 </div>
@@ -145,7 +151,7 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/wheelofsuccess.png" alt="Interactive Guessing Game Site Image">
                 </div>
@@ -162,7 +168,7 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content">
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/singlepage.png" alt="Single Page Site Image">
                 </div>
@@ -178,8 +184,8 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            
-            <div class="project-content">
+
+            <div class="project-content" data-aos="flip-up">
                 <div class="project-content-left">
                     <img src="images/onlineform.png" alt="Online Form Site Image">
                 </div>
@@ -203,15 +209,13 @@
             <a href="mailto:hello@nschmidt.me" class="arrow-link"> Say hello <img class="arrow-right"
                     src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
 
-            <a href="https://github.com/schmay33" class="arrow-link"> 
-                <img class="social-icon" src="svg/github.svg" alt="Github Icon" loading="lazy" >
-                Github <img class="arrow-right"
-                    src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+            <a href="https://github.com/schmay33" class="arrow-link">
+                <img class="social-icon" src="svg/github.svg" alt="Github Icon" loading="lazy">
+                Github <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
 
-            <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="arrow-link"> 
-                <img class="social-icon" src="svg/linkedin.svg" alt="LinkedIn Icon" loading="lazy" >
-                LinkedIn <img
-                    class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/nathan-schmidt-1b083a72/" class="arrow-link">
+                <img class="social-icon" src="svg/linkedin.svg" alt="LinkedIn Icon" loading="lazy">
+                LinkedIn <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
         </div>
     </footer>
     <script src="js/main.js"></script>
