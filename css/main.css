@@ -114,6 +114,9 @@ ul {
     100% { transform: rotate(360deg); }
   } */
 
+  .project-skills-list-item {
+    font-size: .8em;
+  }
 
 
 /*-------------------------------------------------------*/
@@ -279,8 +282,8 @@ header a {
     font-size: .8rem;
     margin-right: .5rem;
 }
-
-.project-skills-list-item:not(:nth-of-type(1))::before {
+*/
+.project-skills-list-item::before {
     content: "";
     height: 20px;
     width: 20px;
@@ -289,8 +292,7 @@ header a {
     background-image: url("../svg/checkmark.svg");
     background-repeat: no-repeat;
     vertical-align: -25%;
-    margin-right: .8rem;
-} */
+}
 
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
