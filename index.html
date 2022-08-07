@@ -15,32 +15,36 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- AOS Scroll Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font">
     <!-- <div class="preloader">
         <div class="loader-icon"></div>
     </div> -->
-    <header class="container slideDown" id="mainHeader">
-        <h1 id="top">Nathan Schmidt</h1>
-        <a href="#projects" class="arrow-link">Projects<img class="arrow-right" src="images/arrow-up-right.svg"
+    <header class="flex pt-6 pl-12 pr-12" id="mainHeader">
+        <h1 id="top" class="mr-auto">Nathan Schmidt</h1>
+        <a href="#projects" class="arrow-link">projects<img class="arrow-right" src="images/arrow-up-right.svg"
                 alt="Arrow icon" loading="lazy"></a>
-        <a href="mailto:hello@nschmidt.me" class="arrow-link">hello@nschmidt.me<img class="arrow-right"
-                src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+        <a href="mailto:hello@nschmidt.me" class="arrow-link ml-2 ring-blue-500">
+            contact
+            <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
     </header>
     <main class="container">
-        <div class="homepage" id="homepage">
-            <div class="homepage-left">
+        <div class="flex flex-row flex-wrap gap-12 justify-center content-center h-screen w-screen pl-6 pr-6 basis-1/2"
+            id="homepage">
+            <div class="homepage-left self-center max-w-md">
                 <h1 class="homepage-title" id="homepage-title">Hello,<br>I'm Nathan Schmidt</h1>
-                <p class="homepage-desc">I'm a <span class="callout">fullstack developer</span> from Kansas City, KS
+                <p class="homepage-desc pb-4">I'm a <span class="callout">fullstack developer</span> from Kansas City, KS
                     USA.<br>
                     Every day I try to keep up with the latest technology trends.<br>
-                    I am always looking for new opportunities to learn and grow as a developer.<br>
-                    Let's build something great together!
+                    I am always looking for new opportunities to learn and grow as a developer.
+                    <p class="pb-4">Let's build something great together!</p>
                 </p>
-                <div class="f-row  homepage-links">
-                    <a href="mailto:hello@nschmidt.me" class="arrow-link"> Say hello <img class="arrow-right"
-                            src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+                <div class="homepage-links flex flex-row gap-4">
+                    <!-- <a href="mailto:hello@nschmidt.me" class="arrow-link"> Say hello <img class="arrow-right"
+                            src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a> -->
 
                     <a href="https://github.com/schmay33" class="arrow-link">
                         <img class="social-icon" src="svg/github.svg" alt="Github Icon" loading="lazy">
@@ -53,20 +57,21 @@
                             loading="lazy"></a>
                 </div>
             </div>
-            <div class="homepage-right">
-                <img class="profile-img" src="images/profile.jpg" alt="Profile Image of Nathan Schmidt" id="myImage">
+            <div class="homepage-right self-center">
+                <img class="profile-img max-w-sm rounded-full" src="images/profile.jpg"
+                    alt="Profile Image of Nathan Schmidt" id="myImage">
             </div>
         </div>
-        <section class="projects" id="projects">
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+        <section class="projects flex flex-col gap-6" id="projects">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/techdegree10.png" alt="Course Library Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Course Library</h2>
                     <p class="project-desc">This is a Create React App frontend connected to the course API backend that
                         I had built previously.</p>
-                    <ul class="project-skills-list">
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Node</li>
                         <li class="project-skills-list-item">Express</li>
                         <li class="project-skills-list-item">Sequelize</li>
@@ -77,14 +82,14 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/bookcollection.png" alt="Book Collection Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Book Collection</h2>
                     <p class="project-desc">This is a Node.JS app used to manage a collection of books.</p>
-                    <ul class="project-skills-list">
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Node</li>
                         <li class="project-skills-list-item">Express</li>
                         <li class="project-skills-list-item">PUG</li>
@@ -95,16 +100,16 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/courseapi.png" alt="Course API Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Student / Course API</h2>
                     <p class="project-desc">This API will provide a way to administer a school database containing
                         information about
                         students and courses.</p>
-                    <ul class="project-skills-list">
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Node</li>
                         <li class="project-skills-list-item">Express</li>
                         <li class="project-skills-list-item">Sequelize</li>
@@ -114,15 +119,15 @@
                 </div>
             </div>
 
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/techdegree07.png" alt="Course API Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">React Flickr Gallery</h2>
                     <p class="project-desc">This photo gallery was built with Create React App and uses the Flickr API
                         to retrieve images.</p>
-                    <ul class="project-skills-list">
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">React</li>
                         <li class="project-skills-list-item">Create React App</li>
                         <li class="project-skills-list-item">REST API</li>
@@ -131,15 +136,15 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/webappdashboard.png" alt="Web App Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Web App Dashboard</h2>
                     <p class="project-desc">A web app dashboard with widgets built with a responsive css grid layout.
                     </p>
-                    <ul class="project-skills-list">
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Javascript</li>
                         <li class="project-skills-list-item">HTML/CSS</li>
                     </ul>
@@ -147,15 +152,15 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/wheelofsuccess.png" alt="Interactive Guessing Game Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Interactive Guessing Game</h2>
                     <p class="project-desc">An interactive game where the user can guess the randomly chosen phrase with
                         only a set amount of wrong guesses.</p>
-                    <ul class="project-skills-list">
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Javascript</li>
                         <li class="project-skills-list-item">HTML/CSS</li>
                     </ul>
@@ -164,14 +169,14 @@
                         <img class="arrow-right" src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
                 </div>
             </div>
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/singlepage.png" alt="Single Page Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Single Page Portfolio</h2>
-                    <p class="project-desc">A simple personal profile page.</p>
-                    <ul class="project-skills-list">
+                    <p class="project-desc">A basic portfolio page for someone looking to showcase themeselves.</p>
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Javascript</li>
                         <li class="project-skills-list-item">HTML/CSS</li>
                     </ul>
@@ -181,14 +186,14 @@
                 </div>
             </div>
 
-            <div class="project-content" data-aos="flip-up">
-                <div class="project-content-left">
+            <div class="project-content flex flex-row flex-wrap basis-1/2 justify-center gap-12 w-screen" data-aos="flip-up">
+                <div class="project-content-left max-w-md">
                     <img src="images/onlineform.png" alt="Online Form Site Image">
                 </div>
-                <div class="project-content-right">
+                <div class="project-content-right max-w-sm">
                     <h2 class="project-title">Online Form</h2>
-                    <p class="project-desc">A simple form for a user to fill out.</p>
-                    <ul class="project-skills-list">
+                    <p class="project-desc">This is a basic online form that can be used to collect inforamtion from a user.</p>
+                    <ul class="project-skills-list flex flex-row gap-6 pt-4 pb-4">
                         <li class="project-skills-list-item">Javascript</li>
                         <li class="project-skills-list-item">HTML/CSS</li>
                     </ul>
@@ -199,11 +204,11 @@
             </div>
         </section>
     </main>
-    <footer class="f-row container">
+    <footer class="f-row container flex flex-row justify-center gap-12 p-24">
         <h1 class="m-r-auto"><a href="#top">Nathan Schmidt</a></h1>
-        <div class="f-row footer-links">
-            <a href="mailto:hello@nschmidt.me" class="arrow-link"> Say hello <img class="arrow-right"
-                    src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a>
+        <div class="f-row footer-links flex flex-row gap-12">
+            <!-- <a href="mailto:hello@nschmidt.me" class="arrow-link"> Email <img class="arrow-right"
+                    src="images/arrow-up-right.svg" alt="Arrow icon" loading="lazy"></a> -->
 
             <a href="https://github.com/schmay33" class="arrow-link">
                 <img class="social-icon" src="svg/github.svg" alt="Github Icon" loading="lazy">
