@@ -282,6 +282,16 @@ header a {
     margin-right: .5rem;
 }
 */
+.project-content {
+	margin-bottom: 2em;
+	padding-bottom: 4em;
+	border-bottom: 1px solid #eee;
+}
+.project-title {
+	text-decoration: underline;
+	padding-bottom: 0.3em;
+	font-weight: bold;
+}
 .project-skills-list-item::before {
 	content: "";
 	height: 20px;
