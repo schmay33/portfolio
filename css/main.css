@@ -24,6 +24,7 @@ html {
 
 body {
 	text-rendering: optimizeLegibility;
+    mid-width: 440px;
 }
 
 a {
@@ -43,6 +44,10 @@ ul {
 
 .font {
 	font-family: var(--font);
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* .container {
@@ -73,6 +78,7 @@ ul {
 	padding: 5px 10px;
 	background-color: var(--text-color-tertiary);
 	width: fit-content;
+    max-height: 42px;
 }
 
 .arrow-link img {
@@ -357,6 +363,7 @@ footer h1 {
 		border-radius: 15px;
 		height: 25rem;
 		width: 25rem;
+        display: inherit;
 	}
 
 	/* footer h1 {
