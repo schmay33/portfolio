@@ -2,34 +2,34 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write  # Changed to write since we need to write to gh-pages branch
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Install, build, and upload site
-        uses: withastro/action@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-          package-manager: npm
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build
+        run: npm run build
+      
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist  # The folder Astro builds to (default is dist)
+          branch: gh-pages  # The branch to deploy to
+          clean: true  # Automatically remove deleted files from the deploy branch 
