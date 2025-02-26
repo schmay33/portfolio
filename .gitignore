@@ -2,7 +2,7 @@
 dist/
 .output/
 .astro/
-.netlify/
+:.netlify/
 
 # generated types
 .astro/
@@ -67,3 +67,5 @@ Desktop.ini
 
 # Optional npm cache directory
 .npm
+
+.nojekyll
