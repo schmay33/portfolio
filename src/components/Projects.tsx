@@ -19,7 +19,7 @@ const projects: Project[] = [
     description: 'Commercial tourism website with responsive design and SEO optimization.',
     technologies: ['Astro', 'HTML', 'CSS', 'JavaScript'],
     features: ['Responsive design', 'SEO optimized', 'Performance optimized'],
-    image: '/portfolio/images/wayanbaliguide.png',
+    image: '/images/wayanbaliguide.png',
     liveUrl: 'https://wayanbaliguide.com'
   },
   {
@@ -27,7 +27,7 @@ const projects: Project[] = [
     description: 'Application Form for MassAbility constiuents.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'ASP.NET Core', 'C#', 'OnBase'],
     features: ['Form validation', 'User authentication', 'REST API integration'],
-    image: '/portfolio/images/onemrc.png',
+    image: '/images/onemrc.png',
     liveUrl: 'https://massmrc.hylandcloud.com/customcode/MRConemrc'
   },
   {
@@ -35,7 +35,7 @@ const projects: Project[] = [
     description: 'Search for insurance documents for the Department of Industrial Accidents.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'JADU', 'OnBase'],
     features: ['JADU', 'Hyland OnBase Integration'],
-    image: '/portfolio/images/dia.png',
+    image: '/images/dia.png',
     liveUrl: 'https://workerscompinfo.mass.gov/insurancemicrofilm'
   },
   {
@@ -43,7 +43,7 @@ const projects: Project[] = [
     description: 'API integration pack in Coda\'s core bundle.',
     technologies: ['JavaScript', 'REST API', 'Coda.io'],
     features: ['API integration', 'Data synchronization', 'Automation'],
-    image: '/portfolio/images/clickup.png',
+    image: '/images/clickup.png',
     liveUrl: 'https://coda.io/packs/clickup-16422'
   },
   {
@@ -51,7 +51,7 @@ const projects: Project[] = [
     description: 'Portal for Massachusetts agency MassAbility',
     technologies: ['JADU', 'HTML', 'CSS', 'JavaScript', 'OnBase'],
     features: ['JADU', 'Hyland OnBase Integration'],
-    image: '/portfolio/images/massability.png',
+    image: '/images/massability.png',
     liveUrl: 'https://inclusivecareersandcommunity.mass.gov',
   },
   {
@@ -59,21 +59,21 @@ const projects: Project[] = [
     description: 'React frontend with course API backend.',
     technologies: ['Node', 'Express', 'Sequelize', 'Pug', 'React'],
     features: ['Course management', 'User authentication', 'RESTful API'],
-    image: '/portfolio/images/courselibrary.png'
+    image: '/images/courselibrary.png'
   },
   {
     title: 'Book Collection',
     description: 'Book collection management system with pagination.',
     technologies: ['Node', 'Express', 'PUG', 'Sequelize'],
     features: ['CRUD operations', 'Pagination', 'Search functionality'],
-    image: '/portfolio/images/bookcollection.png'
+    image: '/images/bookcollection.png'
   },
   {
     title: 'Student / Course API',
     description: 'School database administration API.',
     technologies: ['Node', 'Express', 'Sequelize'],
     features: ['RESTful API', 'Data validation', 'Error handling'],
-    image: '/portfolio/images/courseapi.png'
+    image: '/images/courseapi.png'
   }
 ];
 
