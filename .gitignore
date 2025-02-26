@@ -67,3 +67,9 @@ Desktop.ini
 
 # Optional npm cache directory
 .npm
+
+#jekyll
+.nojekyll
+
+#vscode
+.vscode/
