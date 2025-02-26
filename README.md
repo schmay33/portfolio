@@ -55,7 +55,7 @@ professional layout.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/nschmdt/portfolio.git
+   git clone https://github.com/schmay33/portfolio.git
    cd portfolio
    ```
 
@@ -115,7 +115,7 @@ This project is open source and available under the MIT License.
 
 ## 🤝 Contact
 
-Nathan Schmidt - [LinkedIn](https://linkedin.com/in/nathan-schmidt)
+Nathan Schmidt - [LinkedIn](https://linkedin.com/in/nathan-w-schmidt)
 
 Project Link:
-[https://github.com/nschmdt/portfolio](https://github.com/nschmdt/portfolio)
+[https://github.com/schmay33/portfolio](https://github.com/schmay33/portfolio)
