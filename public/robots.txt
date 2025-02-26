@@ -1,0 +1,13 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nschmdt.github.io/portfolio/sitemap-index.xml
+
+# Disallow access to specific files and directories
+Disallow: /private/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$ 

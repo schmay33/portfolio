@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+
+// SEO metadata
+const title = "Nathan Schmidt - Fullstack Developer Portfolio";
+const description =
+	"Fullstack developer specializing in modern web development with React, Node.js, and .NET technologies. Based in Kansas City, KS.";
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title={title} description={description}>
+	<main>
+		<Navigation client:load />
+		<Hero client:load />
+
+		<div class="sections-container">
+			<Projects client:load />
+			<Skills client:load />
+			<Contact client:load />
+		</div>
+	</main>
+</Layout>
+
+<style>
+	/* Custom scrollbar */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #1a1a1a;
+		html:not(.dark) & {
+			background: #f5f5f7;
+		}
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #4fc3f7;
+		border-radius: 5px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #00bcd4;
+	}
+
+	main {
+		min-height: 100vh;
+		background: linear-gradient(
+			to bottom,
+			var(--color-background-dark),
+			rgba(18, 18, 18, 0.95)
+		);
+
+		:global(html:not(.dark)) & {
+			background: linear-gradient(
+				to bottom,
+				var(--color-background),
+				rgba(245, 245, 247, 0.95)
+			);
+		}
+	}
+
+	.sections-container {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		padding: 0;
+	}
+
+	@media (min-width: 768px) {
+		.sections-container {
+			gap: 0;
+			padding: 0;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.sections-container {
+			gap: 0;
+			padding: 0;
+		}
+	}
+</style>
